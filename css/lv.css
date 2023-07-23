@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+body{
+    background: #9af3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.like {
+    margin-left: 15px;
+    line-height: 100px;
+    height: 100px;
+    overflow: hidden;
+    list-style: none;
+    color: #ca2323;
+    font-weight: 600;
+    font-size: 80px;
+    position: relative;
+    top: 0;
+}
+.like::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #9af3f3;
+    border-left: 2px solid #ca2323;
+    animation: typing 4s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.coeur img{
+	width: 50px;
+	animation: bubble 7s linear infinite;
+}
+.coeur{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -120px;
+}
+@keyframes bubble{
+    0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 2;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity: 3;
+	}
+}
+.coeur img:nth-child(1){
+	animation-delay: 1s;
+	width: 30px;
+}
+.coeur img:nth-child(2){
+	animation-delay: 6s;
+	width: 35px;
+}
+.coeur img:nth-child(3){
+	animation-delay: 3s;
+	width: 40px;
+}
+.coeur img:nth-child(4){
+	animation-delay: 1s;
+	width: 30px;
+}
+.coeur img:nth-child(5){
+	animation-delay: 6s;
+	width: 35px;
+}
+.coeur img:nth-child(6){
+	animation-delay:3s;
+	width: 40px;
+}
+.coeur img:nth-child(7){
+	animation-delay: 5s;
+	width: 30px;
+}
+.coeur img:nth-child(8){
+	animation-delay: 1s;
+	width: 35px;
+}
+.coeur img:nth-child(9){
+	animation-delay: 6s;
+	width: 40px;
+}
+.coeur img:nth-child(10){
+	animation-delay: 4s;
+	width: 30px;
+}
+.coeur img:nth-child(11){
+	animation-delay: 1s;
+	width: 35px;
+}
+
+
+
